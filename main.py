@@ -53,6 +53,10 @@ class Player(Ship):
         self.mask = pygame.mask.from_surface(self.ship_img)
         self.max_health = health
 
+class Enemy(ship):
+    def __init__(self, x, y, color, health=100):
+        super().__init__(x, y, health)
+
 # pylint: disable=no-member
 
 def main():
