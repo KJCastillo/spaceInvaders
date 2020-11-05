@@ -93,7 +93,7 @@ def main():
             if event.type == pygame.QUIT:
                 run = False
 
-
+        #key pressdown code
         keys = pygame.key.get_pressed()
         if keys[pygame.K_a] and player.x - player_vel > 0: # left
              player.x -=  player_vel
